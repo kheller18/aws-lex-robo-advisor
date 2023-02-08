@@ -1,4 +1,3 @@
-# aws-lex-robo-advisor
 # AWS Lex Robo Advisor
 
 ![license badge](https://shields.io/badge/license-mit-blue)
@@ -10,8 +9,7 @@ This project contains studying materials and practice problems for Software Engi
 
 ## Table of Contents
 
-- [aws-lex-robo-advisor](#aws-lex-robo-advisor)
-- [AWS Lex Robo Advisor](#aws-lex-robo-advisor-1)
+- [AWS Lex Robo Advisor](#aws-lex-robo-advisor)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [1. Installation](#1-installation)
