@@ -1,6 +1,6 @@
 # AWS Lex Robo Advisor
 
-![license badge](https://shields.io/badge/license-GNU-blue)
+![license badge](https://shields.io/badge/license--blue)
 
 
 ## Description
@@ -44,6 +44,8 @@ Now that we've seen that the bot works, we have to use Lambda to control our con
 With the Lamda function tested and complete, we integrate it into Lex. We can see the new Lex GIF below:
 
 ![Lex Lambda Gif](Videos/robo_advisor_lambda_gif.gif)
+
+We are able to see that the bot is fully funcitonal. When the user tries to enter an age outside of constraints, the bot asks for the age again. When the user enters an investment amount less than the constraint, it asks the user for a larger investment. The outcome is that the user, based on their aggressiveness level, is given a recommendation about how to invest their capital.
 
 ## Table of Contents
 
