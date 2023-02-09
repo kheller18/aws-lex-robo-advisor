@@ -33,6 +33,18 @@ Our intents are defined below:
     + investmentAmount (AMAZON.NUMBER)
     + riskLevel (AMAZON.AlphaNumeric)
 
+Once everything has been defined, we can test our bot using only Lex. The GIF is seen below:
+
+![Lex Gif](Videos/robo_advisor_gif_v1.gif)
+
+Now that we've seen that the bot works, we have to use Lambda to control our constraints. The constraints are as follows:
+  + 0 >= age <=65
+  + investmentAmount >= 5000
+
+With the Lamda function tested and complete, we integrate it into Lex. We can see the new Lex GIF below:
+
+![Lex Lambda Gif](Videos/robo_advisor_lambda_gif.gif)
+
 ## Table of Contents
 
 - [AWS Lex Robo Advisor](#aws-lex-robo-advisor)
