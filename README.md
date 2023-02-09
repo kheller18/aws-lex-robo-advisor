@@ -1,11 +1,37 @@
 # AWS Lex Robo Advisor
 
-![license badge](https://shields.io/badge/license-mit-blue)
+![license badge](https://shields.io/badge/license-GNU-blue)
 
 
 ## Description
 
-This project contains studying materials and practice problems for Software Engineering interviews.
+This project uses AWS Lex and Lambda. I created a Lex Bot that will give recommendations to a user based on their inputs. The Lex Bot uses Lambda to check against constraints.
+
+The general criteria for the bot is seen below:
+  + Bot name: RoboAdvisor
+  + Language: English (US)
+  + Output voice: Salli
+  + Session timeout: 5 Minutes
+  + Sentiment analysis: No
+  + COPPA: No
+  + Advanced Options: No
+  + All other options: Default values
+
+Our intents are defined below:
+  + Utterances
+    + I want to save money for my retirement
+    + I'm {age} and I would like to invest for my retirement
+    + I'm ​{age} and I want to invest for my retirement
+    + I want the best option to invest for my retirement
+    + I'm worried about my retirement
+    + I want to invest for my retirement
+    + I would like to invest for my retirement
+
+  + Slots
+    + firstName (AMAZON.US_FIRST_NAME)
+    + age (AMAZON.NUMBER)
+    + investmentAmount (AMAZON.NUMBER)
+    + riskLevel (AMAZON.AlphaNumeric)
 
 ## Table of Contents
 
