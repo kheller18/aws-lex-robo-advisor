@@ -29,7 +29,6 @@ This project contains studying materials and practice problems for Software Engi
 ## 2. Usage
 
   After cloning the repository locally, you'll need to have the packages listed in [Installation](#1-installation) installed on your machine.
-  After all of these are installed, please refer to the [Deployment](#6-deployment) section for instructions on how to view or edit the notebook.
 
 
 ## 3. License
