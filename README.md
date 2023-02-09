@@ -64,7 +64,11 @@ This project contains studying materials and practice problems for Software Engi
 
 ## 5. Tests
 
-  + There are currently no tests associated with this project.
+  + There are four tests associated with this repository. They can be found in the "Test_Events" directory.
+    + ageError
+    + correctDialog
+    + incorrectAmountError
+    + negativeAgeError
 
 
 ## 6. Deployment
