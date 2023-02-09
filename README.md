@@ -65,6 +65,10 @@ We are able to see that the bot is fully funcitonal. When the user tries to ente
 
   If you would like to clone the repository, type "git clone https://github.com/kheller18/aws-lex-robo-advisor.git".
 
+  The following is used in this repository:
+  + [AWS Lex (V1)](https://aws.amazon.com/lex/) - NLP Chatbot
+  + [AWS Lambda](https://aws.amazon.com/lambda/) - Business logic extension to Lex bot
+
 
 ## 2. Usage
 
