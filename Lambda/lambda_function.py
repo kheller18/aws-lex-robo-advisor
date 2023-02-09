@@ -14,7 +14,6 @@ def parse_int(n):
     except ValueError:
         return float("nan")
 
-
 def build_validation_result(is_valid, violated_slot, message_content):
     """
     Define a result message structured as Lex response.
@@ -28,14 +27,12 @@ def build_validation_result(is_valid, violated_slot, message_content):
         "message": {"contentType": "PlainText", "content": message_content},
     }
 
-
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
     """
     Fetch all the slots and their values from the current intent.
     """
     return intent_request["currentIntent"]["slots"]
-
 
 def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message):
     """
@@ -53,7 +50,6 @@ def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message)
         },
     }
 
-
 def delegate(session_attributes, slots):
     """
     Defines a delegate slot type response.
@@ -63,7 +59,6 @@ def delegate(session_attributes, slots):
         "sessionAttributes": session_attributes,
         "dialogAction": {"type": "Delegate", "slots": slots},
     }
-
 
 def close(session_attributes, fulfillment_state, message):
     """
@@ -80,7 +75,6 @@ def close(session_attributes, fulfillment_state, message):
     }
 
     return response
-
 
 ### Intents Handlers ###
 def recommend_portfolio(intent_request):
@@ -132,7 +126,6 @@ def recommend_portfolio(intent_request):
         },
     )
 
-
 ### gives advice based users' choice of aggressiveness ###
 def get_recommendation(risk_level):
     """Returns percentage split for bonds and equities based on users' agressiveness"""
@@ -147,7 +140,6 @@ def get_recommendation(risk_level):
         return '20% bonds (AGG), 80% equities (SPY).'
     else:
         return '100% bonds (AGG), 0% equities (SPY) - (Invalid risk-level, default portfolio recommended).'
-
 
 ### validates age and investment amount ###
 def validate_inputs(age, investment_amount):
@@ -190,7 +182,6 @@ def dispatch(intent_request):
         return recommend_portfolio(intent_request)
 
     raise Exception("Intent with name " + intent_name + " not supported")
-
 
 ### Main Handler ###
 def lambda_handler(event, context):
