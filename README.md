@@ -1,6 +1,6 @@
 # AWS Lex Robo Advisor
 
-![license badge](https://shields.io/badge/license--blue)
+![license badge](https://shields.io/badge/license-GNU-blue)
 
 
 ## Description
