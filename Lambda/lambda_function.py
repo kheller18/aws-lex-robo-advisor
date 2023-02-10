@@ -130,13 +130,13 @@ def recommend_portfolio(intent_request):
 def get_recommendation(risk_level):
     """Returns percentage split for bonds and equities based on users' agressiveness"""
 
-    if risk_level == 'None':
+    if risk_level == 'None' or risk_level == 'none':
         return '100% bonds (AGG), 0% equities (SPY).'
-    elif risk_level == 'Low':
+    elif risk_level == 'Low' or risk_level == 'Low':
         return '60% bonds (AGG), 40% equities (SPY).'
-    elif risk_level == 'Medium':
+    elif risk_level == 'Medium' or risk_level == 'medium':
         return '40% bonds (AGG), 60% equities (SPY).'
-    elif risk_level == 'High':
+    elif risk_level == 'High' or risk_level == 'high':
         return '20% bonds (AGG), 80% equities (SPY).'
     else:
         return '100% bonds (AGG), 0% equities (SPY) - (Invalid risk-level, default portfolio recommended).'
